@@ -21,13 +21,18 @@
 
         img {
             width: 100%;
-            height: auto;
+            max-width: 400px; /* Limiter la taille maximale de l'image */
+            height: auto; /* Conserver les proportions de l'image */
             border-radius: 8px;
             margin-bottom: 1rem;
         }
 
         h3 {
             color: $primary-color;
+        }
+
+        p {
+            color: $secondary-color;
         }
 
         a {

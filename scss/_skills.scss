@@ -25,6 +25,9 @@
                 height: 100px;
                 object-fit: cover;
                 border-radius: 50%;
+                background-color: #fff; /* Fond blanc */
+                padding: 10px; /* Pour l'espace entre l'image et le bord */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour l'effet de profondeur */
             }
 
             p {
