@@ -1,21 +1,39 @@
 header {
-    background: $primary-color;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: $primary-color;
+    color: $background-color;
+    padding: 0.5rem 0; // Réduire le padding pour un header plus petit
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     text-align: center;
 
-    nav ul {
-        list-style: none;
-        padding: 0;
+    h1 {
+        margin: 0;
+        font-size: 1.5rem; // Réduire la taille du texte
+    }
 
-        li {
-            display: inline;
-            margin: 0 10px;
+    nav {
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            
+            li {
+                margin: 0 0.5rem;
 
-            a {
-                color: #fff;
-                text-decoration: none;
+                a {
+                    color: $background-color;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
+}
+
+html {
+    scroll-behavior: smooth; // Ajoute le défilement fluide pour toute la page
 }

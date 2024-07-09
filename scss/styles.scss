@@ -7,6 +7,7 @@
 @import 'contact';
 @import 'animations';
 @import 'modal';
+@import 'sections';
 
 body {
     font-family: Arial, sans-serif;
@@ -18,11 +19,19 @@ body {
 }
 
 section {
-    padding: 2rem;
+    padding: 4rem 2rem 2rem; // Ajuster le padding supérieur
     margin: 1rem 0;
     border-radius: 8px;
     background: $background-color;
     color: $secondary-color;
+
+    &:before {
+        content: "";
+        display: block;
+        height: 4rem; // Ajuster cette valeur en fonction de la nouvelle hauteur du header
+        margin-top: -4rem; // Même valeur que height pour compenser
+        visibility: hidden;
+    }
 
     h2 {
         color: $primary-color;
@@ -43,14 +52,10 @@ section {
 header, nav, footer {
     background-color: $primary-color;
     color: $background-color;
+}
 
-    a {
-        color: $background-color;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+footer p {
+    color: $background-color;
 }
 
 .skills-grid .skill p {
@@ -77,10 +82,6 @@ header, nav, footer {
     color: $accent-color;
 }
 
-footer p {
-    color: $background-color;
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
     header {
@@ -93,8 +94,7 @@ footer p {
     }
 
     section {
-        padding: 1rem;
-        margin: 0.5rem 0;
+        padding: 4rem 1rem 1rem; // Ajuster le padding supérieur
     }
 
     .skills-grid {
@@ -123,8 +123,7 @@ footer p {
     }
 
     section {
-        padding: 1.5rem;
-        margin: 0.75rem 0;
+        padding: 4rem 1.5rem 1.5rem; // Ajuster le padding supérieur
     }
 
     .skills-grid {

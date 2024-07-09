@@ -1,0 +1,30 @@
+section {
+    padding: 4rem 2rem 2rem; // Ajuster le padding supérieur
+    margin: 1rem 0;
+    border-radius: 8px;
+    background: $background-color;
+    color: $secondary-color;
+
+    &:before {
+        content: "";
+        display: block;
+        height: 4rem; // Ajuster cette valeur en fonction de la nouvelle hauteur du header
+        margin-top: -4rem; // Même valeur que height pour compenser
+        visibility: hidden;
+    }
+
+    h2 {
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        padding-bottom: 0.5rem;
+    }
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
