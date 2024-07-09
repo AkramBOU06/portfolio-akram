@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: $background-color;
     color: $secondary-color;
 }
 
@@ -21,6 +21,64 @@ section {
     padding: 2rem;
     margin: 1rem 0;
     border-radius: 8px;
+    background: $background-color;
+    color: $secondary-color;
+
+    h2 {
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        padding-bottom: 0.5rem;
+    }
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+header, nav, footer {
+    background-color: $primary-color;
+    color: $background-color;
+
+    a {
+        color: $background-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.skills-grid .skill p {
+    color: $secondary-color;
+}
+
+.project img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project h3 {
+    color: $primary-color;
+}
+
+.project p {
+    color: $secondary-color;
+}
+
+.project a {
+    color: $accent-color;
+}
+
+footer p {
+    color: $background-color;
 }
 
 /* Media Queries */
