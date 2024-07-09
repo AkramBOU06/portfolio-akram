@@ -22,31 +22,58 @@
     <section id="about" class="fade-in">
       <h2>À propos</h2>
       <p>
-        Je m'appelle Akram Bouchoucha, j'ai 20 ans et je suis développeur web.
-        J'ai suivi une formation de développeur web chez OpenClassrooms. Avant
-        cela, j'étais à la faculté en licence d'anglais. Je suis passionné par
-        le développement web et les nouvelles technologies.
+        Je m'appelle Akram Bouchoucha, j'ai 20 ans et je suis développeur web
+        passionné par les nouvelles technologies et la création de solutions
+        innovantes. Après avoir obtenu une licence en anglais, j'ai décidé de me
+        réorienter vers le développement web, une décision motivée par ma
+        curiosité pour le monde numérique et mon envie de participer activement
+        à la transformation digitale.
+      </p>
+      <p>
+        J'ai suivi une formation intensive de développeur web chez
+        OpenClassrooms, où j'ai acquis des compétences solides en HTML, CSS,
+        JavaScript et React. Cette formation m'a permis de travailler sur des
+        projets concrets, d'apprendre les meilleures pratiques du développement
+        web et de développer une approche rigoureuse et structurée du code.
+      </p>
+      <p>
+        Mon parcours en intégration web m'a appris à transformer des maquettes
+        en sites web fonctionnels et esthétiques. J'ai développé une attention
+        particulière aux détails, à l'optimisation des performances et à
+        l'accessibilité, garantissant ainsi une expérience utilisateur optimale.
+      </p>
+      <p>
+        En plus de mes compétences techniques, j'ai appris à collaborer
+        efficacement avec des équipes pluridisciplinaires, à gérer des projets
+        de manière agile et à m'adapter rapidement aux nouvelles technologies et
+        aux outils. Mon objectif est de continuer à apprendre et à évoluer dans
+        ce domaine passionnant, tout en apportant ma contribution à des projets
+        innovants et ambitieux.
       </p>
     </section>
 
     <section id="skills" class="fade-in">
       <h2>Compétences</h2>
       <div class="skills-grid">
-        <div class="skill">
-          <img src="images/html.png" alt="HTML" />
+        <div class="skill skill-trigger" data-target="#modal-html">
+          <img src="images/html.jpg" alt="HTML" />
           <p>HTML</p>
         </div>
-        <div class="skill">
-          <img src="images/css-image.jpg" alt="CSS" />
+        <div class="skill skill-trigger" data-target="#modal-css">
+          <img src="images/css.svg" alt="CSS" />
           <p>CSS</p>
         </div>
-        <div class="skill">
-          <img src="images/js-image.jpg" alt="JavaScript" />
+        <div class="skill skill-trigger" data-target="#modal-js">
+          <img src="images/js.webp" alt="JavaScript" />
           <p>JavaScript</p>
         </div>
-        <div class="skill">
-          <img src="images/react-image.jpg" alt="React" />
+        <div class="skill skill-trigger" data-target="#modal-react">
+          <img src="images/react.png" alt="React" />
           <p>React</p>
+        </div>
+        <div class="skill skill-trigger" data-target="#modal-github">
+          <img src="images/github.webp" alt="GitHub" />
+          <p>GitHub</p>
         </div>
       </div>
     </section>
@@ -54,31 +81,43 @@
     <section id="projects" class="fade-in">
       <h2>Projets</h2>
       <div class="project">
-        <img src="images/project1-image.jpg" alt="Projet 1" />
-        <h3>Projet 1</h3>
+        <img src="images/ohmyfood.jpg" alt="Projet 1" />
+        <h3>Projet 1 : OhMyFood</h3>
         <p>
-          Description du projet 1. Ce projet m'a permis de développer des
-          compétences en [compétences spécifiques].
+          Pour le projet "Ohmyfood", j'ai amélioré l'interface mobile-first d'un
+          site de start-up en intégrant des maquettes fournies et en utilisant
+          Sass pour organiser et optimiser le CSS. J'ai implémenté des
+          animations CSS pour enrichir l'expérience utilisateur, rendant la
+          navigation plus interactive et engageante. En utilisant Git et GitHub,
+          j'ai versionné le projet, ce qui m'a permis de gérer efficacement le
+          code et de collaborer facilement. Ce projet m'a permis de renforcer
+          mes compétences en intégration de maquettes, en animations CSS et en
+          gestion de version avec Git.
         </p>
-        <a href="https://github.com/username/projet1">Voir le code</a>
-        <a href="https://lien-vers-le-site.com">Voir le site</a>
+        <a href="https://github.com/AkramBOU06/ohmyfood">Voir le code</a>
+        <a href="https://akrambou06.github.io/ohmyfood/">Voir le site</a>
       </div>
       <div class="project">
-        <img src="images/project2-image.jpg" alt="Projet 2" />
-        <h3>Projet 2</h3>
+        <img src="images/ninacarducci.webp" alt="Projet 2" />
+        <h3>Projet 2 : Nina Carducci</h3>
         <p>
-          Description du projet 2. Ce projet m'a permis de développer des
-          compétences en [compétences spécifiques].
+          Pour ce projet, j'ai optimisé le référencement (SEO) et
+          l'accessibilité du site d'un photographe. J'ai identifié les problèmes
+          de chargement et de SEO, puis proposé et implémenté des solutions pour
+          améliorer la vitesse de chargement et la structure du code. En
+          utilisant des outils comme Lighthouse et Wave, j'ai amélioré les
+          performances du site, augmentant sa visibilité sur les moteurs de
+          recherche.
         </p>
-        <a href="https://github.com/username/projet2">Voir le code</a>
-        <a href="https://lien-vers-le-site.com">Voir le site</a>
+        <a href="https://github.com/AkramBOU06/NinaCarducci">Voir le code</a>
+        <a href="https://akrambou06.github.io/NinaCarducci/">Voir le site</a>
       </div>
     </section>
 
     <section id="contact" class="fade-in">
       <h2>Contact</h2>
       <form
-        action="mailto:akram@example.com"
+        action="mailto:akrambouchoucha@gmail.com"
         method="post"
         enctype="text/plain"
       >
@@ -95,6 +134,63 @@
     <footer>
       <p>&copy; 2024 Akram Bouchoucha. Tous droits réservés.</p>
     </footer>
+
+    <!-- Modals -->
+    <div id="modal-html" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>HTML</h2>
+        <p>
+          J'ai utilisé HTML pour structurer mes pages web, en créant des balises
+          sémantiques et en organisant le contenu de manière logique et
+          accessible.
+        </p>
+      </div>
+    </div>
+    <div id="modal-css" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>CSS</h2>
+        <p>
+          J'ai utilisé CSS pour styliser mes pages web, en appliquant des mises
+          en page flexibles, des animations, et en assurant une expérience
+          utilisateur cohérente sur tous les appareils.
+        </p>
+      </div>
+    </div>
+    <div id="modal-js" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>JavaScript</h2>
+        <p>
+          J'ai utilisé JavaScript pour ajouter des fonctionnalités interactives
+          à mes pages web, en manipulant le DOM, en gérant les événements et en
+          communiquant avec des API externes.
+        </p>
+      </div>
+    </div>
+    <div id="modal-react" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>React</h2>
+        <p>
+          J'ai utilisé React pour créer des applications web dynamiques et
+          réactives, en utilisant des composants réutilisables et en gérant
+          l'état de l'application de manière efficace.
+        </p>
+      </div>
+    </div>
+    <div id="modal-github" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>GitHub</h2>
+        <p>
+          J'ai utilisé GitHub pour gérer le code source de mes projets, en
+          suivant les meilleures pratiques de versioning, en collaborant avec
+          d'autres développeurs et en déployant des applications web.
+        </p>
+      </div>
+    </div>
 
     <script src="js/scripts.js"></script>
   </body>
