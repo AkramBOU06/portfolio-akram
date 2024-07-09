@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Akram Bouchoucha</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue sur mon portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about" class="fade-in">
+      <h2>À propos</h2>
+      <p>
+        Je m'appelle Akram Bouchoucha, j'ai 20 ans et je suis développeur web.
+        J'ai suivi une formation de développeur web chez OpenClassrooms. Avant
+        cela, j'étais à la faculté en licence d'anglais. Je suis passionné par
+        le développement web et les nouvelles technologies.
+      </p>
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <img src="images/html.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <img src="images/css-image.jpg" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="images/js-image.jpg" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="images/react-image.jpg" alt="React" />
+          <p>React</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projets</h2>
+      <div class="project">
+        <img src="images/project1-image.jpg" alt="Projet 1" />
+        <h3>Projet 1</h3>
+        <p>
+          Description du projet 1. Ce projet m'a permis de développer des
+          compétences en [compétences spécifiques].
+        </p>
+        <a href="https://github.com/username/projet1">Voir le code</a>
+        <a href="https://lien-vers-le-site.com">Voir le site</a>
+      </div>
+      <div class="project">
+        <img src="images/project2-image.jpg" alt="Projet 2" />
+        <h3>Projet 2</h3>
+        <p>
+          Description du projet 2. Ce projet m'a permis de développer des
+          compétences en [compétences spécifiques].
+        </p>
+        <a href="https://github.com/username/projet2">Voir le code</a>
+        <a href="https://lien-vers-le-site.com">Voir le site</a>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <form
+        action="mailto:akram@example.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Akram Bouchoucha. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

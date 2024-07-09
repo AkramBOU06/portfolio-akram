@@ -1,0 +1,44 @@
+#projects {
+    padding: 2rem;
+    margin: 1rem 0;
+    border-bottom: 2px solid $primary-color;
+    border-radius: 8px;
+    background-color: #fff;
+
+    h2 {
+        border-bottom: 2px solid $primary-color;
+        padding-bottom: 0.5rem;
+        color: $primary-color;
+    }
+
+    .project {
+        margin: 1rem 0;
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: $primary-color;
+        }
+
+        a {
+            display: inline-block;
+            margin: 0.5rem;
+            color: $primary-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

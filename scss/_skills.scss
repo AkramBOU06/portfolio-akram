@@ -1,0 +1,36 @@
+#skills {
+    padding: 2rem;
+    margin: 1rem 0;
+    border-bottom: 2px solid $primary-color;
+    border-radius: 8px;
+    background-color: #fff;
+
+    h2 {
+        border-bottom: 2px solid $primary-color;
+        padding-bottom: 0.5rem;
+        color: $primary-color;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .skill {
+            text-align: center;
+            margin: 1rem;
+
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            p {
+                margin-top: 0.5rem;
+                color: $secondary-color;
+            }
+        }
+    }
+}
