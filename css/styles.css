@@ -1,21 +1,36 @@
 @charset "UTF-8";
 header {
-  background: #6a1b9a;
-  color: #fff;
-  padding: 1rem 0;
+  background-color: #6a1b9a;
+  color: #ffffff;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 header nav ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 header nav ul li {
-  display: inline;
-  margin: 0 10px;
+  margin: 0 0.5rem;
 }
 header nav ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 footer {
@@ -199,6 +214,33 @@ footer {
   cursor: pointer;
 }
 
+section {
+  padding: 4rem 2rem 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #000000;
+}
+section:before {
+  content: "";
+  display: block;
+  height: 4rem;
+  margin-top: -4rem;
+  visibility: hidden;
+}
+section h2 {
+  color: #6a1b9a;
+  border-bottom: 2px solid #6a1b9a;
+  padding-bottom: 0.5rem;
+}
+section a {
+  color: #ff5722;
+  text-decoration: none;
+}
+section a:hover {
+  text-decoration: underline;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -209,11 +251,18 @@ body {
 }
 
 section {
-  padding: 2rem;
+  padding: 4rem 2rem 2rem;
   margin: 1rem 0;
   border-radius: 8px;
   background: #ffffff;
   color: #000000;
+}
+section:before {
+  content: "";
+  display: block;
+  height: 4rem;
+  margin-top: -4rem;
+  visibility: hidden;
 }
 section h2 {
   color: #6a1b9a;
@@ -232,11 +281,9 @@ header, nav, footer {
   background-color: #6a1b9a;
   color: #ffffff;
 }
-header a, nav a, footer a {
+
+footer p {
   color: #ffffff;
-}
-header a:hover, nav a:hover, footer a:hover {
-  text-decoration: underline;
 }
 
 .skills-grid .skill p {
@@ -263,10 +310,6 @@ header a:hover, nav a:hover, footer a:hover {
   color: #ff5722;
 }
 
-footer p {
-  color: #ffffff;
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
   header {
@@ -277,8 +320,7 @@ footer p {
     margin: 10px 0;
   }
   section {
-    padding: 1rem;
-    margin: 0.5rem 0;
+    padding: 4rem 1rem 1rem;
   }
   .skills-grid {
     flex-direction: column;
@@ -301,8 +343,7 @@ footer p {
     margin: 0.5rem 0;
   }
   section {
-    padding: 1.5rem;
-    margin: 0.75rem 0;
+    padding: 4rem 1.5rem 1.5rem;
   }
   .skills-grid {
     flex-direction: row;
